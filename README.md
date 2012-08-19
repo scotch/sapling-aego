@@ -1,7 +1,7 @@
 # sapling-aego
-### A started project for AngularJS using Brunch.io
+### Google App Engine Starter App That Uses Go / AngularJS / Brunch to Tame User Management and Other Mundane Tasks
 
-Features:
+Client Features:
 * Coffeescrpt / Less / Sass / SCSS / Stylus automatically compiled on save
 * auto-reload during development saves you from manually refreshing the page
 * Javascript / CSS minification for production
