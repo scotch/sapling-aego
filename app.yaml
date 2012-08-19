@@ -1,0 +1,49 @@
+application: sapling-aego
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+- url: /(robots\.txt|favicon\.ico|apple-touch-icon.*)
+  static_files: client/_public/img/root/\1
+  upload: client_public/img/root/.*
+
+- url: /partials
+  static_dir: client/_public/partials
+
+- url: /img
+  static_dir: client/_public/img
+
+- url: /font
+  static_dir: client/_public/font
+
+- url: /css
+  static_dir: client/_public/css
+
+- url: /js
+  static_dir: client/_public/js
+
+- url: /
+  static_files: index.html
+  upload: client/_public/index.html
+
+- url: /.*
+  script: _go_app
+
+skip_files:
+  - ^(.*/)?app\.yaml
+  - ^(.*/)?app\.yml
+  - ^(.*/)?index\.yaml
+  - ^(.*/)?index\.yml
+  - ^(.*/)?#.*#
+  - ^(.*/)?.*~
+  - ^(.*/)?.*\.py[co]
+  - ^(.*/)?.*/RCS/.*
+  - ^(.*/)?\..*
+  - ^(.*/)?.*\.bak$
+  - ^(.*/)?.*\.coffee
+  - ^(.*/)?.*\.jade
+  - client/node_modules
+  - client/test
+  - client/vendor
+  - client/scripts
