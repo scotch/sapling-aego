@@ -24,7 +24,7 @@ handlers:
   static_dir: client/_public/js
 
 - url: /
-  static_files: index.html
+  static_files: client/_public/index.html
   upload: client/_public/index.html
 
 - url: /.*
