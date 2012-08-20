@@ -51,7 +51,7 @@ func init() {
 }
 
 var (
-	indexTmpl = loadTmpl("client/app/assets/index.html")
+	indexTmpl = loadTmpl("template/index.html")
 )
 
 func templateData() map[string]interface{} {
