@@ -1,6 +1,6 @@
 [submodule "client"]
 	path = client
 	url = git://github.com/scotch/sapling.git
-[submodule "github.com/scotch/hal"]
-	path = github.com/scotch/hal
-	url = git://github.com/scotch/hal.git
+[submodule "github.com/scotch/aego"]
+	path = github.com/scotch/aego
+	url = git://github.com/scotch/aego.git
